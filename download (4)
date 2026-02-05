@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Cake Fairy by Purvi</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+body{
+  background:#fff8f3;
+  color:#3b2f2f;
+}
+section{padding:60px 20px;}
+.container{max-width:1200px;margin:auto;}
+h1,h2,h3{color:#4b1e1e;}
+.btn{
+  display:inline-block;
+  padding:14px 30px;
+  border-radius:30px;
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  margin:8px;
+}
+
+/* HERO */
+.hero{
+  background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+  url("https://images.unsplash.com/photo-1578985545062-69928b1d9587");
+  background-size:cover;
+  background-position:center;
+  text-align:center;
+  color:#fff;
+  padding:100px 20px;
+}
+.hero h1{font-size:42px;color:#fff;}
+.hero p{margin:15px 0;font-size:18px;}
+.rating{color:#ffd700;margin-top:10px;font-size:18px;}
+.btn-call{background:#d2691e;}
+.btn-insta{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:25px;
+  margin-top:40px;
+}
+.card{
+  background:#fff4ec;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+}
+
+/* GALLERY */
+.gallery img{
+  width:100%;
+  border-radius:15px;
+}
+
+/* CTA */
+.cta{
+  background:#4b1e1e;
+  color:#fff;
+  text-align:center;
+}
+
+/* CONTACT */
+.contact-box{
+  background:#fff4ec;
+  padding:30px;
+  border-radius:20px;
+  text-align:center;
+}
+
+/* MAP */
+.map iframe{
+  width:100%;
+  height:350px;
+  border-radius:20px;
+  border:0;
+  margin-top:30px;
+}
+
+/* FOOTER */
+footer{
+  background:#3b2f2f;
+  color:#fff;
+  text-align:center;
+  padding:20px;
+}
+
+/* FLOATING BUTTONS */
+.floating-social{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  display:flex;
+  flex-direction:column;
+  gap:14px;
+  z-index:9999;
+}
+.floating-social a{
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 8px 20px rgba(0,0,0,.35);
+  animation:pulse 2s infinite;
+}
+.float-wa{background:#25D366;}
+.float-insta{
+  background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);
+}
+.floating-social svg{
+  width:30px;
+  height:30px;
+  fill:#fff;
+}
+@keyframes pulse{
+  0%{box-shadow:0 0 0 0 rgba(0,0,0,.4);}
+  70%{box-shadow:0 0 0 15px rgba(0,0,0,0);}
+  100%{box-shadow:0 0 0 0 rgba(0,0,0,0);}
+}
+@media(max-width:768px){
+  .hero h1{font-size:32px;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>The Cake Fairy by Purvi</h1>
+  <p>Handcrafted Premium Cakes for Every Celebration 🎂</p>
+  <a href="tel:09820913697" class="btn btn-call">Call to Order</a>
+  <a href="https://www.instagram.com/thecakefairybypurvi" target="_blank" class="btn btn-insta">Instagram</a>
+  <div class="rating">★★★★★ 5.0 Rating</div>
+</section>
+
+<!-- BENEFITS -->
+<section>
+<div class="container">
+<h2 style="text-align:center">Why Choose Us?</h2>
+<div class="grid">
+<div class="card"><h3>Fresh Ingredients</h3><p>Premium quality ingredients.</p></div>
+<div class="card"><h3>Custom Cakes</h3><p>Designed exactly as you want.</p></div>
+<div class="card"><h3>On-Time Delivery</h3><p>Your moments matter.</p></div>
+<div class="card"><h3>Homemade Love</h3><p>Baked with passion.</p></div>
+</div>
+</div>
+</section>
+
+<!-- GALLERY -->
+<section class="gallery">
+<div class="container">
+<h2 style="text-align:center;margin-bottom:30px;">Our Cakes</h2>
+<div class="grid">
+<img src="https://images.unsplash.com/photo-1542826438-bd32f43d626f">
+<img src="https://images.unsplash.com/photo-1603532648955-039310d9ed75">
+<img src="https://images.unsplash.com/photo-1559622214-6d6e8f6d8e4a">
+<img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e">
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+<h2>Make Your Celebration Sweeter 🍰</h2>
+<a href="https://wa.me/919820913697?text=Hi%20The%20Cake%20Fairy%20by%20Purvi,%20I%20want%20to%20order%20a%20custom%20cake"
+class="btn btn-call">Order on WhatsApp</a>
+</section>
+
+<!-- CONTACT + MAP -->
+<section>
+<div class="container">
+<h2 style="text-align:center">Visit or Contact Us</h2>
+<div class="contact-box">
+<p><strong>📍 Address:</strong><br>
+A-21, 6th Floor, Krishnalaya Society,<br>
+Next to Vrindavan Society, N. S Manikaran Marg,<br>
+Chunabhatti, Sion, Mumbai – 400022</p>
+
+<p><strong>📞 Phone:</strong> 09820913697</p>
+<p><strong>⏰ Timing:</strong> 8:00 AM – 11:00 PM</p>
+
+<a href="https://www.instagram.com/thecakefairybypurvi" class="btn btn-insta">Visit Instagram</a>
+</div>
+
+<!-- GOOGLE MAP -->
+<div class="map">
+<iframe 
+src="https://www.google.com/maps?q=Krishnalaya%20Society%20Chunabhatti%20Mumbai&output=embed"
+loading="lazy">
+</iframe>
+</div>
+
+</div>
+</section>
+
+<footer>
+© 2026 The Cake Fairy by Purvi | All Rights Reserved
+</footer>
+
+<!-- FLOATING BUTTONS -->
+<div class="floating-social">
+
+<a class="float-wa" target="_blank"
+href="https://wa.me/919820913697?text=Hi%20The%20Cake%20Fairy%20by%20Purvi,%20I%20want%20to%20order%20a%20cake">
+<svg viewBox="0 0 32 32"><path d="M16.04 2.003C8.3 2.003 2.003 8.3 2.003 16.04c0 2.826.738 5.57 2.14 7.99L2 30l6.17-2.03a13.93 13.93 0 007.87 2.29c7.74 0 14.04-6.3 14.04-14.04 0-7.74-6.3-14.04-14.04-14.04z"/></svg>
+</a>
+
+<a class="float-insta" target="_blank"
+href="https://www.instagram.com/thecakefairybypurvi">
+<svg viewBox="0 0 24 24"><path d="M12 0c3.26 0 3.667.014 4.947.072 1.277.058 2.282.26 3.102.578.85.33 1.57.77 2.28 1.48.71.71 1.15 1.43 1.48 2.28.318.82.52 1.825.578 3.102C23.986 8.332 24 8.74 24 12s-.014 3.668-.072 4.948c-.058 1.277-.26 2.282-.578 3.102-.33.85-.77 1.57-1.48 2.28-.71.71-1.43 1.15-2.28 1.48-.82.318-1.825.52-3.102.578C15.668 23.986 15.26 24 12 24z"/></svg>
+</a>
+
+</div>
+
+</body>
+</html>
